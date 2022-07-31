@@ -4,5 +4,7 @@
 <h2> {{teams.name}} </h2>
 <h2> {{teams.trophy}} </h2>
 <h2> {{teams.rater}} </h2>
+<a href="{% url 'teams_update' teams.pk %}">update team</a>
+<a href="{% url 'teams_delete' teams.pk %}">delete team</a>
 
 {% endblock content %}

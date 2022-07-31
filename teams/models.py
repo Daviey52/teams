@@ -11,4 +11,4 @@ class Teams(models.Model):
     return self.name
 
   def get_absolute_url(self):
-    return reverse ('teams_detail', arg=[str(self.id)])
+    return reverse ('teams_detail', args=[str(self.id)])
