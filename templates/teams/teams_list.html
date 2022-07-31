@@ -2,4 +2,9 @@
 
 {% block content %}
 <h2> These are the top ten soccer Teams </h2>
+{% for teams in object_list %}
+<li>
+  <a href="{% url 'teams_detail' teams.pk %}">{{teams.name}}</a>
+</li>
+{% endfor %}
 {% endblock content %}
